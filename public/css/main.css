@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-decoration: 0;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-size: 100%; }
+
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+.slideshow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 400px;
+  max-width: 600px; }
+  .slideshow__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em;
+    height: 450px; }
+    .slideshow__content-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(60%);
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 10px; }
+    .slideshow__content__prev-button {
+      cursor: pointer;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      position: absolute;
+      width: 10%;
+      max-width: 50px;
+      height: 60px;
+      align-self: flex-start;
+      background-color: transparent;
+      transition: 0.8s ease; }
+      .slideshow__content__prev-button:hover {
+        background-color: rgba(0, 0, 0, 0.2); }
+      .slideshow__content__prev-button-icon {
+        width: 20px; }
+    .slideshow__content__next-button {
+      cursor: pointer;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      position: absolute;
+      width: 10%;
+      max-width: 50px;
+      height: 60px;
+      align-self: flex-end;
+      background-color: transparent;
+      transition: 0.8s ease; }
+      .slideshow__content__next-button:hover {
+        background-color: rgba(0, 0, 0, 0.2); }
+      .slideshow__content__next-button-icon {
+        width: 20px; }
+  .slideshow__switch-button {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #787878;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; }
+    .slideshow__switch-button:hover {
+      background-color: black; }
+
+.active {
+  background-color: black; }

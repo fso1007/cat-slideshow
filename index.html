@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+  <html lang="eng">
+    <head>
+      <!--Metadata-->
+      <meta charset="UTF-8">
+      <meta name="description" content="Slideshow">
+      <meta name="keywords" content="slideshow, slide, carousel">
+      <meta name="author" content="Fabio Oliveira">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Slideshow</title>
+      <!--External Links-->
+      <link rel="stylesheet" href="public/css/main.css">
+    </head>
+    <body>
+      <main>
+        <div class="slideshow">
+          <div class="slideshow__content">
+            <img class="slideshow__content-img" src="./public/assets/images/cat-01.jpg" alt="cat">
+            <button class="slideshow__content__prev-button" id="prev">
+              <img class="slideshow__content__prev-button-icon" src="./public/assets/images/left-arrow.svg" alt="left arrow">
+            </button>
+            <button class="slideshow__content__next-button" id="next">
+              <img class="slideshow__content__next-button-icon" src="./public/assets/images/right-arrow.svg" alt="right arrow">
+            </button>
+          </div>  
+          <div class="slideshow__switch">
+            <button class="slideshow__switch-button active"></button>
+            <button class="slideshow__switch-button"></button>
+            <button class="slideshow__switch-button"></button>
+            <button class="slideshow__switch-button"></button>
+          </div>
+        </div>
+      </main>
+      <!--Scripts-->
+      <script src="./public/assets/scripts/slideshow_functions.js"></script>
+    </body>
+  </html>

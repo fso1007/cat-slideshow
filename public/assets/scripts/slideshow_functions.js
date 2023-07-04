@@ -15,7 +15,7 @@ let iBtn = 0;
 function next() {
   nextAnimation();
   i++;
-  if (i > 3) {
+  if (i > images.length - 1) {
     i = 0;
   }
   image.src = images[i].url;
@@ -26,7 +26,7 @@ function previous() {
   prevAnimation();
   i--;
   if (i < 0) {
-    i = 3;
+    i = (images.length - 1);
   }
   image.src = images[i].url;
   prevButtonSwitcher()
@@ -62,7 +62,7 @@ function prevAnimation() {
 function nextButtonSwitcher() {
   switchBtns[iBtn].classList.remove("active");
   iBtn++;
-  if (iBtn > 3) {
+  if (iBtn > images.length - 1) {
     iBtn =  0;
   }
   switchBtns[iBtn].classList.add("active");
@@ -72,7 +72,7 @@ function prevButtonSwitcher() {
   switchBtns[iBtn].classList.remove("active");
   iBtn--;
   if (iBtn < 0) {
-    iBtn =  3;
+    iBtn = (images.length - 1);
   }
   switchBtns[iBtn].classList.add("active");
 };

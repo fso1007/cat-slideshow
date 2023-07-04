@@ -58,8 +58,6 @@
       width: 20px;
       height: 20px;
       border-radius: 50%; }
-      .slideshow__switch-button:hover {
-        background-color: black; }
 
 .active {
   background-color: black; }

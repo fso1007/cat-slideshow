@@ -33,14 +33,14 @@ function previous() {
 };
 
 const nextEffect = [
-  { transform: 'translate(20px)',
+  { transform: 'translate(10px)',
     opacity: '0.3'},
   { transform: 'translate(0px)',
     opacity: '1.0'},
 ];
 
 const prevEffect = [
-  { transform: 'translate(-20px)',
+  { transform: 'translate(-10px)',
     opacity: '0.3'},
   { transform: 'translate(0px)',
     opacity: '1.0'},

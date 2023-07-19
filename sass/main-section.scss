@@ -3,16 +3,15 @@
   flex-direction: column;
   align-items: center;
   margin: auto;
-  width: 400px;
-  max-width: 600px;
 
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1em;
-    height: 520px;
-    
+    margin: 12px;
+    width: 92%;
+    max-width: 500px;
+    height: 430px;
 
     &-img {
       width: 100%;
@@ -67,20 +66,19 @@
   }
 
   &__switch {
-    margin: 1em 0;
+    margin: 12px 0;
 
     &-button {
       border: none;
-      margin: 0 .2em;
+      margin: 0 2px;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       background-color: rgb(120, 120, 120);
-      width: 20px;
-      height: 20px;
+      width: 18px;
+      height: 18px;
       border-radius: 50%;
     }
   }
 }
-
 
 .active {
   background-color: black;
